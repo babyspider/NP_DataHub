@@ -14,7 +14,7 @@ plotly <br />
 | Name	| GitHub Handle	| Email |
 | --- | --- | --- |
 | Joey Hinckley | JoeyHinckley34 | hinckj@rpi.edu |
-| | babyspider | |
+| Ariana Lissak | babyspider | lissaa@rpi.edu |
 
 
 ## MileStones 
