@@ -11,5 +11,10 @@ NP DataHub wil be a website for other non profits, policy makers, and donors to 
 ## Technology
 
 ## Group Members
+| Name	| GitHub Handle	| Email |
+---
+| Joey Hinckley | JoeyHinckley34 | hinckj@rpi.edu |
+| | babyspider | |
+
 
 ## MileStones 
