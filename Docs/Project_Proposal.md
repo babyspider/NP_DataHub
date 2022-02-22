@@ -18,8 +18,14 @@ plotly <br />
 
 
 ## MileStones 
-- Week 1: Choose a NTEE Code
-- Week 2:
-- Week 3:
-- Week 4:
-- Week 5:
+- Week 1: Identify one of 26 NTEE sectors within New York State, which will serve as a testing sample for algorithmic construction, platform development, and data visualization implementation. 
+- Week 2: Establish the preliminary database foundation for the NTEE sample and associated functionality to be implemented within the V1.0 platform.
+- Week 3: Establish the V1.0 platform with associated end-user functionality for data visualization/dashboard construction and algorithmic results.
+- Week 4: Identify one public database source that aligns with the chosen NTEE sector to be included in advanced algorithmic construction. (Basically, what are we trying to tell the end-user or why are these results important?)
+- Week 5: Begin testing phase on selected fiscal variables of individual nonprofits and associated NTEE codes and define their purpose. (What story are we trying to tell through data that will serve the public interest based on fiscal performance?) Developers can establish the quantity of algorithms with a focus on quality.
+- Week 6: Begin testing phase on selected fiscal variables of individual nonprofits and associated NTEE codes and define their purpose and alignment with the chosen public dataset. (What story are we trying to tell through data that will serve the public interest?) Developers can establish the quantity of algorithms with a focus on quality.
+- Week 7: Finalize algorithms with an emphasis on accuracy and precision.
+- Week 8:Incorporate findings within the chosen open-source data visualization libraries.
+- Week 9: Construct data visualization dashboard.
+- Week 10: Launch V1.0 of the platform for user testing and presentation.  
+
