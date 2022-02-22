@@ -18,3 +18,8 @@ plotly <br />
 
 
 ## MileStones 
+- Week 1: Choose a NTEE Code
+- Week 2:
+- Week 3:
+- Week 4:
+- Week 5:
