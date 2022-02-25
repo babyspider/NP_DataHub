@@ -8,9 +8,9 @@ NP DataHub wil be a website for other non profits, policy makers, and donors to 
 While our end goal for the project is an all encompassing website. We will start off small choosing only one [NTEE code](https://nccs.urban.org/project/national-taxonomy-exempt-entities-ntee-codes) to go in depth on. Following choosing an NTEE code, we will begin gathering all relevant data and storing everything in a database. Once we get a database set up we can start implementing some basic algorithms just so we can get some output to put up on our website. We would then like to explore some interesting algorithms we can design for fiscal variables and maybe even be able to measure impact of orgs within an NTEE sector. <br />
 
 ## Technology
-plotly <br />
-Other Open Source Data Vis Tools maybe one of these https://rigorousthemes.com/blog/best-open-source-data-visualization-tools/<br />
-Javascript and Python <br />
+[Plotly](https://plotly.com) <br />
+Other Open Source Data Vis Tools maybe one of [these](https://rigorousthemes.com/blog/best-open-source-data-visualization-tools/)<br />
+[Javascript](https://www.javascript.com) and [Python](https://www.python.org) <br />
 
 ## Group Members
 | Name	| GitHub Handle	| Email |
