@@ -5,10 +5,12 @@
 NP DataHub wil be a website for other non profits, policy makers, and donors to view information on non profits. This will help the end user in making informed decsions. We will pull from the publicly availible data on non profits produced by the IRS. Then through deploying machine leanring algorithms we will gather an in depth analysis of all non profits we have data for. Finally we will publish our findings to and pretty website. <br />
 
 ## Semster Plan
-While our end goal is an all encompassing website. We will start off small choosing only one [NTEE code](https://nccs.urban.org/project/national-taxonomy-exempt-entities-ntee-codes) to go in depth on. Following choosing an NTEE code, we will begin gathering all relevant data and storing everything in a database. Once we get a database set up we can start implementing some basic algorithms just so we cna get some output to put up on our website. <br />
+While our end goal for the project is an all encompassing website. We will start off small choosing only one [NTEE code](https://nccs.urban.org/project/national-taxonomy-exempt-entities-ntee-codes) to go in depth on. Following choosing an NTEE code, we will begin gathering all relevant data and storing everything in a database. Once we get a database set up we can start implementing some basic algorithms just so we can get some output to put up on our website. We would then like to explore some interesting algorithms we can design for fiscal variables and maybe even be able to measure impact of orgs within an NTEE sector. <br />
 
 ## Technology
 plotly <br />
+Other Open Source Data Vis Tools <br />
+Javascript and Python <br />
 
 ## Group Members
 | Name	| GitHub Handle	| Email |
@@ -16,6 +18,7 @@ plotly <br />
 | Joey Hinckley | JoeyHinckley34 | hinckj@rpi.edu |
 | Ariana Lissak | babyspider | lissaa@rpi.edu |
 
+In collaboration with Professor Orzechowski
 
 ## MileStones 
 - Week 1: Identify one of 26 NTEE sectors within New York State, which will serve as a testing sample for algorithmic construction, platform development, and data visualization implementation. 
