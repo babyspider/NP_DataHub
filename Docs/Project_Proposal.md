@@ -27,6 +27,6 @@ In collaboration with Professor Orzechowski
 - Week 6: Begin testing phase on selected fiscal variables of individual nonprofits and associated NTEE codes and define their purpose and alignment with the chosen public dataset. (What story are we trying to tell through data that will serve the public interest?) Developers can establish the number of algorithms with a focus on quality.
 - Week 7: Finalize algorithms with an emphasis on accuracy and precision.
 - Week 8:Incorporate findings within the chosen open-source data visualization libraries.
-- Week 9: Construct data visualization dashboard.
+- Week 9: Construct a data visualization dashboard.
 - Week 10: Launch V1.0 of the platform for user testing and presentation.  
 
