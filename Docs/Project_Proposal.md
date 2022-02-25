@@ -9,7 +9,7 @@ While our end goal for the project is an all encompassing website. We will start
 
 ## Technology
 plotly <br />
-Other Open Source Data Vis Tools <br />
+Other Open Source Data Vis Tools maybe one of these https://rigorousthemes.com/blog/best-open-source-data-visualization-tools/<br />
 Javascript and Python <br />
 
 ## Group Members
