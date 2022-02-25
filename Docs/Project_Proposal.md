@@ -13,8 +13,8 @@ We plan on using an [SQL Database](https://en.wikipedia.org/wiki/SQL) hosted on 
 ## Group Members
 | Name	| GitHub Handle	| Email |
 | --- | --- | --- |
-| Joey Hinckley | JoeyHinckley34 | hinckj@rpi.edu |
-| Ariana Lissak | babyspider | lissaa@rpi.edu |
+| Joey Hinckley | [JoeyHinckley34](https://github.com/JoeyHinckley34) | hinckj@rpi.edu |
+| Ariana Lissak | [babyspider](https://github.com/babyspider) | lissaa@rpi.edu |
 
 In collaboration with Professor Orzechowski
 
