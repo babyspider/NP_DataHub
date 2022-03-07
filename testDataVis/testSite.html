@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Non-Profit Datahub</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
+	<style type="text/css">
+		body {
+			background-color: lightgrey;
+		}
+		h1 {
+			text-align: left;
+			font-family: Arial;
+			font-size: 20px;
+      color: #0066cc;
+		}
+		#bar {
+			background-color: white;
+			border-radius: 20px;
+			padding:20px 25px 10px 10px;
+			margin: 20px;
+		}
+    #heat {
+      background-color: white;
+      border-radius: 20px;
+      padding:20px 25px 10px 10px;
+      margin: 20px;
+    }
+	</style>  
+  </head>
+  <body>
+  	<h1>
+  		Non-Profit Datahub
+  	</h1>
+
+    <div id="bar"></div>
+
+    <script type="text/javascript">
+      var fakebar = {
+        $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
+        width: 500,
+        height: 300,
+
+        description: 'The amount of impact by money spent.',
+        data: {
+          values: [
+            {Impact: '10K People', Money: 28},
+            {Impact: '20K People', Money: 55},
+            {Impact: '30K People', Money: 43},
+            {Impact: '40K People', Money: 91},
+          ]
+        },
+        mark: 'bar',
+        encoding: {
+          x: {field: 'Money', type: 'quantitative'},
+          y: {field: 'Impact', type: 'ordinal'}
+        }
+      };
+      vegaEmbed('#bar', fakebar);
+    </script>
+  </body>
+</html>
