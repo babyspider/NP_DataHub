@@ -1,4 +1,4 @@
-# Getting Started with The Data
+# Getting Started with the Data
 This is a guide to how to understand and interact with the data to run your own analysis. 
 
 ### Our Data
