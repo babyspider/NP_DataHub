@@ -1,7 +1,9 @@
 #import statements
+
 import csv
 import statistics
 import plotly.express as px
+import numpy as np
 
 #importing the file to analyze and putting it in a list
 file = "NTEE_OS_Housing_Master_OSTeam - Master.csv"
