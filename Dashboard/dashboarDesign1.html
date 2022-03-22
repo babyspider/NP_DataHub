@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Non-Profit Datahub</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
+	<style type="text/css">
+		body {
+			background-color: white;
+		}
+		
+		#logo {
+			background-color: white;
+			border-radius: 20px;
+			padding:20px 25px 10px 10px;
+			margin: 20px;
+		}
+    #topSection {
+      width: 100%;
+      background-color: pink;
+    }
+
+    #rightColumn {
+      width: 30%;
+      background-color: blue;
+      float: right;
+    }
+
+    #focusSection {
+      width: 70%;
+      background-color: green;
+    }
+
+    .selection {
+      display: inline-block;
+
+    }
+
+	</style> 
+
+  <script> 
+    $(function(){
+      $("#focalPoint").load("plotly_graph.html"); 
+    });
+  </script>  
+  </head>
+  <body>
+    <div id="logo"></div>
+    <div id="topSection">
+      <div id="dropDownFilterNTEEPrimary" class="selection">
+        <form>
+          <select name="primary">
+            <option value="1"> 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+          </select>
+        </form>
+      </div>
+      <div id="dropDownFilterNTEESecondary" class="selection">
+        <form>
+          <select name="primary">
+            <option value="1"> 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+          </select>
+        </form>
+      </div>
+      <div id="dropDownFilterVariableForXAxis" class="selection">
+        <form>
+          <select name="primary">
+            <option value="1"> 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+          </select>
+        </form>
+      </div>
+      <div id="dropDownFilterVariableForYAxis" class="selection">
+        <form>
+          <select name="primary">
+            <option value="1"> 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+          </select>
+        </form>
+      </div>
+    </div>
+    <script src="jquery.js"></script> 
+    <div  id = "focalPoint">
+    </div>
+    <div id="rightColumn">
+      <div id = "dvOne">HIHIHI</div>
+      <div id = "dvTwoSankey"></div>
+      <div id = "dvThree"></div>
+    </div>
+    <text> words words words awesome words </text>
+  </body>
+</html>
