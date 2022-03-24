@@ -27,23 +27,25 @@
       float: right;
     }
 
-    #focusSection {
+    #focalPoint {
+      display: inline-block;
       width: 70%;
       background-color: green;
     }
 
     .selection {
       display: inline-block;
-
     }
+
+    .side {
+      margin: 3%;
+      background-color: white;
+      padding: 20px;
+    }
+    
 
 	</style> 
 
-  <script> 
-    $(function(){
-      $("#focalPoint").load("plotly_graph.html"); 
-    });
-  </script>  
   </head>
   <body>
     <div id="logo"></div>
@@ -87,11 +89,12 @@
     </div>
     <script src="jquery.js"></script> 
     <div  id = "focalPoint">
+      <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~chris/1638.embed" height="525" width="100%"></iframe>
     </div>
     <div id="rightColumn">
-      <div id = "dvOne">HIHIHI</div>
-      <div id = "dvTwoSankey"></div>
-      <div id = "dvThree"></div>
+      <div class = "side" id = "dvOne">HIHIHI</div>
+      <div class = "side" id = "dvTwoSankey"></div>
+      <div class = "side" id = "dvThree"></div>
     </div>
     <text> words words words awesome words </text>
   </body>
