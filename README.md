@@ -1,4 +1,7 @@
-# NP_DataHub
+# Navigating NP_DataHub
+For installation instructions please go to the community folder, that will also contain our new user info, community guidelines and style guidelines. For more information on our license, we invite you to read it. It is located in this root folder. 
+
+# About NP_DataHub
 Even though there are databases that cater to donors and monitor baseline financial activity for nonprofits, there is no one public resource that allows the end-user to visualize fiscal performance of these organizations and examine longitudinal data for each nonprofit and an entire non-profit sector, of which there are 26 as defined by the IRS. Based on public IRS data, culled over eight years, the overall objective of this project is to build an open-source platform, allowing the end-user to visualize nonprofit fiscal performance to help grantmakers, donors, and public policymakers make more accurate and efficient decisions. Essentially, this platform will be similar to the Bloomberg terminal but open source for nonprofits. <br />
 <br />
 In short, the tentatively named NP DataHub is a cloud-based data intelligence platform for philanthropies and nonprofits that offers algorithmic-based insights for more strategic community investment. <br />
