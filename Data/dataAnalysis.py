@@ -20,6 +20,14 @@ def convertToGraph(listy):
 		y.append(listy[i][1])
 	return [x, y]
 
+# function to create lists from values
+def pullToList(values, i):
+	listy = []
+	for x in range(0, len(values)):
+		if values[x][i] != "":
+			listy.append(float(values[x][i]))
+	return listy
+
 # importing the file to analyze and putting it in a list
 file = "NTEE_OS_Housing_Master_OSTeam - Master.csv"
 values = []
@@ -29,68 +37,47 @@ with open(file, "r") as filer:
         values.append(value)
 values.pop(0)
 
+
 # pulling and converting liability values
-liabilities = []
-for x in range(0, len(values)):
-    if values[x][364] != "":
-        liabilities.append(float(values[x][364]))
+liabilities = pullToList(values, 364)
 
 # pulling and converting asset values
-assets = []
-for x in range(0, len(values)):
-    if values[x][363] != "":
-        assets.append(float(values[x][363]))
+assets = pullToList(values, 363)
 
 # pulling and converting revenue values
-revenues = []
-for x in range(0, len(values)):
-    if values[x][345] != "":
-        revenues.append(float(values[x][345]))
+revenues = pullToList(values, 345)
 
 #values grouped by nonprofit
 test = []
-for x in range(0, len(values)):
-    if values[x][364] != "" and values[x][345] != ""  and values[x][363] != "":
-        test.append([float(values[x][364]), float(values[x][363])])
+for x in range(0, len(assets)):
+    if assets[x] != "" and liabilities[x] != "":
+        test.append([assets[x], liabilities[x]])
+
 # finding median of assets and liabilities using stats library
 medLiabilities = statistics.median(liabilities)
 
 
 #defining and running the kmeans
+clusters = 8
 graph = plt.figure()
-km = KMeans(n_clusters = 3, n_init = 10, init = "random")
+km = KMeans(n_clusters = clusters, n_init = 10, init = "random")
 label = km.fit_predict(test)
-
-import matplotlib.pyplot as plt
  
-#filter rows to individual clusters
-zeroes = []
-for l in range(0, len(label)):
-	if label[l] == 0:
-		zeroes.append(test[l])
 
-ones = []
-for l in range(0, len(label)):
-	if label[l] == 1:
-		ones.append(test[l])
-
-twos = []
-for l in range(0, len(label)):
-	if label[l] == 2:
-		twos.append(test[l])
-
-# convert clusters to graph form
-zeroesPlot = convertToGraph(zeroes)
-onesPlot = convertToGraph(ones)
-twosPlot = convertToGraph(twos)
-
-# add clusters to graph
-plt.scatter(zeroesPlot[0], zeroesPlot[1], color = 'blue')
-plt.scatter(onesPlot[0], onesPlot[1], color = 'green')
-plt.scatter(twosPlot[0], twosPlot[1], color = 'purple')
+#graphing clusters
+colors = ['pink', 'purple', 'red', 'blue', 'green', 'black', 'orange', 'yellow']
+for c in range(0, clusters):
+	clustery = []
+	for l in range(0, len(label)):
+		if label[l] == c:
+			clustery.append(test[l])
+	clusterPlot = convertToGraph(clustery)
+	plt.scatter(clusterPlot[0], clusterPlot[1], color = colors[c])
 
 # save graph as image
 plt.savefig("plot.png")
+
+
 # running knn algorithm on assets vs. liabilities
 '''
 landaNeigh = KNeighborsClassifier(n_neighbors=5)
