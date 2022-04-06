@@ -5,7 +5,7 @@ from sklearn.cluster import KMeans
 import numpy as np
 from mpl_toolkits.mplot3d import Axes3D
 from sklearn.neighbors import KNeighborsClassifier
-import matplotlib.pyplot as plt, mpld3
+import matplotlib.pyplot as plt, mlpd3
 import matplotlib
 
 #so you dont need a gui 
@@ -15,10 +15,12 @@ matplotlib.use('Agg')
 def convertToGraph(listy):
 	x = []
 	y = []
+	z = []
 	for i in range(0, len(listy)):
 		x.append(listy[i][0])
 		y.append(listy[i][1])
-	return [x, y]
+		z.append(listy[i][2])
+	return [x, y, z]
 
 # function to create lists from values
 def pullToList(values, i):
@@ -60,6 +62,7 @@ medLiabilities = statistics.median(liabilities)
 #defining and running the kmeans
 clusters = 8
 graph = plt.figure()
+ax = graph.add_subplot(projection='3d')
 km = KMeans(n_clusters = clusters, n_init = 10, init = "random")
 label = km.fit_predict(test)
  
@@ -72,24 +75,7 @@ for c in range(0, clusters):
 		if label[l] == c:
 			clustery.append(test[l])
 	clusterPlot = convertToGraph(clustery)
-	plt.scatter(clusterPlot[0], clusterPlot[1], color = colors[c])
+	ax.scatter(clusterPlot[0], clusterPlot[1], clusterPlot[2], color = colors[c])
 
 # save graph as image
-mpld3.show()
-
-
-# running knn algorithm on assets vs. liabilities
-'''
-landaNeigh = KNeighborsClassifier(n_neighbors=5)
-landaSet = [[]]
-landaSet.append(liabilities)
-landaSet.append(assets)
-landaNeigh.fit(assets, liabilities)
-# running knn on assets and revenues
-landrNeigh = KNeighborsClassifier(n_neighbors=5)
-landrNeigh.fit(assets, revenues)
-landrNeigh.reshape(-1, 1)
-# comparing one np to the median in liabilities
-# fig = px.scatter(x=landaNeigh[0], y=landaNeigh[1])
-# fig.show()
-''' 
+plt.savefig("plot.png")

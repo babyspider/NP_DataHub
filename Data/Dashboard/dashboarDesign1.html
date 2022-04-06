@@ -2,52 +2,54 @@
 <html>
   <head>
     <title>The Non-Profit Datahub</title>
-    <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
-	<style type="text/css">
-		body {
-			background-color: white;
-		}
-		
-		#logo {
-			border-radius: 20px;
-			padding:20px 25px 10px 10px;
-			margin: 20px;
-		}
-    #topSection {
-      width: 100%;
-    }
+    <script type="text/javascript">
+      function updateSelection(){
+        
+      }
+    </script>
+  	<style type="text/css">
+  		body {
+  			background-color: white;
+  		}
+  		
+  		#logo {
+  			border-radius: 20px;
+  			padding:20px 25px 10px 10px;
+  			margin: 20px;
+  		}
+      #topSection {
+        width: 100%;
+      }
 
-    #rightColumn {
-      width: 25%;
-      float: right;
-      display: inline-block;
-    }
+      #rightColumn {
+        width: 25%;
+        float: right;
+        display: inline-block;
+      }
 
-    #focalPoint {
-      display: inline-block;
-      width: 75%;
-      float: left;
-    }
+      #focalPoint {
+        display: inline-block;
+        width: 75%;
+        float: left;
+      }
 
-    #footer {
-      width: 100%;
-      float: right;
-    }
+      #footer {
+        width: 100%;
+        float: right;
+      }
 
-    .selection {
-      display: inline-block;
-    }
+      .selection {
+        display: inline-block;
+      }
 
-    .side {
-      margin-bottom: 3%;
-      border-color: grey;
-      padding: 20px;
-    }
+      .side {
+        margin-bottom: 3%;
+        border-color: grey;
+        padding: 20px;
+      }
 
 
-	</style> 
+  	</style> 
 
   </head>
   <body>
@@ -81,7 +83,7 @@
         </form>
       </div>
       <div id="dropDownFilterVariableForYAxis" class="selection">
-        <form>
+        <form >
           <select name="primary">
             <option value="1"> Option 1 </option>
             <option value="2"> 2 </option>
