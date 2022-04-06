@@ -58,7 +58,7 @@ medLiabilities = statistics.median(liabilities)
 
 
 #defining and running the kmeans
-clusters = 8
+clusters = 3
 graph = plt.figure()
 km = KMeans(n_clusters = clusters, n_init = 10, init = "random")
 label = km.fit_predict(test)

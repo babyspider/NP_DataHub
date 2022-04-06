@@ -22,11 +22,18 @@
     #rightColumn {
       width: 25%;
       float: right;
+      display: inline-block;
     }
 
     #focalPoint {
       display: inline-block;
       width: 75%;
+      float: left;
+    }
+
+    #footer {
+      width: 100%;
+      float: right;
     }
 
     .selection {
@@ -34,11 +41,11 @@
     }
 
     .side {
-      margin: 3%;
+      margin-bottom: 3%;
       border-color: grey;
       padding: 20px;
     }
-    
+
 
 	</style> 
 
@@ -49,7 +56,7 @@
       <div id="dropDownFilterNTEEPrimary" class="selection">
         <form>
           <select name="primary">
-            <option value="1"> 1 </option>
+            <option value="1"> Option 1 </option>
             <option value="2"> 2 </option>
             <option value="3"> 3 </option>
           </select>
@@ -83,15 +90,16 @@
         </form>
       </div>
     </div>
-    <script src="jquery.js"></script> 
-    <div  id = "focalPoint">
-      <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~chris/1638.embed" height="525" width="100%"></iframe>
+    <div>
+      <img src="../plot.png" alt="Graph" id ="focalPoint">
     </div>
     <div id="rightColumn">
       <div class = "side" id = "dvOne">One</div>
       <div class = "side" id = "dvTwoSankey">Sankey</div>
       <div class = "side" id = "dvThree">Top Five</div>
     </div>
-    <text> words words words awesome words </text>
+    <div id= "footer">
+      <text> words words words awesome words </text>
+    </div>
   </body>
 </html>
