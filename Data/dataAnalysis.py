@@ -15,10 +15,12 @@ matplotlib.use('Agg')
 def convertToGraph(listy):
 	x = []
 	y = []
+	z = []
 	for i in range(0, len(listy)):
 		x.append(listy[i][0])
 		y.append(listy[i][1])
-	return [x, y]
+		z.append(listy[i][2])
+	return [x, y, z]
 
 # function to create lists from values
 def pullToList(values, i):
@@ -51,15 +53,16 @@ revenues = pullToList(values, 345)
 test = []
 for x in range(0, len(assets)):
     if assets[x] != "" and liabilities[x] != "":
-        test.append([assets[x], liabilities[x]])
+        test.append([assets[x], liabilities[x], revenues[x]])
 
 # finding median of assets and liabilities using stats library
 medLiabilities = statistics.median(liabilities)
 
 
 #defining and running the kmeans
-clusters = 3
+clusters = 8
 graph = plt.figure()
+ax = graph.add_subplot(projection='3d')
 km = KMeans(n_clusters = clusters, n_init = 10, init = "random")
 label = km.fit_predict(test)
  
@@ -72,7 +75,7 @@ for c in range(0, clusters):
 		if label[l] == c:
 			clustery.append(test[l])
 	clusterPlot = convertToGraph(clustery)
-	plt.scatter(clusterPlot[0], clusterPlot[1], color = colors[c])
+	ax.scatter(clusterPlot[0], clusterPlot[1], clusterPlot[2], color = colors[c])
 
 # save graph as image
 plt.savefig("plot.png")
