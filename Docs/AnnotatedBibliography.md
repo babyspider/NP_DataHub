@@ -11,3 +11,5 @@ This is a clustering library with graphing capabilities. It has k-means and affi
 
 https://gitlab.com/-/snippets/1924163
 This is a very good example on how to use flask to generate plots that you can pull into an html page. This will allow us to generate python graphs and run all our analytic tools through that and be able to display them through the dashboard.
+
+https://www.djangoproject.com/start/
