@@ -4,7 +4,7 @@
 ## Overview
 NP DataHub will be a website for other non-profits, policymakers, and donors to view information on non-profits. This will help the end-user in making informed decisions. We will pull from the publicly available data on nonprofits produced by the IRS. Then through deploying machine learning algorithms, we will gather an in-depth analysis of all non-profits we have data for. Finally, we will publish our findings on a pretty website. <br />
 
-## Semster Plan
+## Semester Plan
 While our end goal for this project would be an all-encompassing website with very pretty and interesting data visualizations. We will start off small, by focusing our data analysis on only one NTEE code. After making this initial choice, we will set up a database to store the data points centrally. Once we get a database set up,  we can start implementing some basic data visualizations and analysis just so we can get some output to put up on our website. We would then like to explore some interesting algorithms  for analysis like neural networks and clustering libraries. Additionally, we can design some algorithmic analysis for fiscal variables and maybe even be able to measure the impact of organizations within an NTEE sector. </br>
 
 ## Technology
