@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Non-Profit Datahub</title>
+    <script type="text/javascript">
+      function updateSelection(){
+
+      }
+        function resizeIframe(iframe) {
+    iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+    iframe.width = iframe.contentWindow.document.body.scrollWidth + "px";
+  }
+    </script>
+  	<style type="text/css">
+  		body {
+  			background-color: white;
+  		}
+  		
+  		#logo {
+  			border-radius: 20px;
+  			padding:20px 25px 10px 10px;
+  			margin: 20px;
+  		}
+      #topSection {
+        width: 100%;
+      }
+
+      #rightColumn {
+        width: 25%;
+        float: right;
+        display: inline-block;
+      }
+
+      #focalPoint {
+        display: inline-block;
+        width: 75%;
+        float: left;
+        height: 75%;
+      }
+
+      #footer {
+        width: 100%;
+        float: right;
+      }
+
+      .selection {
+        display: inline-block;
+      }
+
+      .side {
+        margin-bottom: 3%;
+        border-color: grey;
+        padding: 20px;
+      }
+
+
+  	</style> 
+
+  </head>
+  <body>
+    <div id="logo"></div>
+    <div id="topSection">
+      <div id="dropDownFilterNTEEPrimary" class="selection">
+        <form>
+          <select name="primary">
+            <option value="1"> Option 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+          </select>
+        </form>
+      </div>
+      <div id="dropDownFilterNTEESecondary" class="selection">
+        <form>
+          <select name="primary">
+            <option value="1"> Option 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+          </select>
+        </form>
+      </div>
+      <div id="dropDownFilterVariableForXAxis" class="selection">
+        <form>
+          <select name="primary">
+            <option value="1"> Option 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+          </select>
+        </form>
+      </div>
+      <div id="dropDownFilterVariableForYAxis" class="selection">
+        <form >
+          <select name="primary">
+            <option value="1"> Option 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+          </select>
+        </form>
+      </div>
+    </div>
+    <div id="focalPoint">
+      <iframe  scrolling="no" src="http://127.0.0.1:8888" title="graph" height="500px" width="500px"></iframe>
+    </div>
+    <div id="rightColumn">
+      <div class = "side" id = "dvOne">One</div>
+      <div class = "side" id = "dvTwoSankey">Sankey</div>
+      <div class = "side" id = "dvThree">Top Five</div>
+    </div>
+    <div id= "footer">
+      <text> words words words awesome words </text>
+    </div>
+  </body>
+</html>

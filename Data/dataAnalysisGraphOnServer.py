@@ -76,20 +76,3 @@ for c in range(0, clusters):
 
 # save graph as image
 mpld3.show()
-
-
-# running knn algorithm on assets vs. liabilities
-'''
-landaNeigh = KNeighborsClassifier(n_neighbors=5)
-landaSet = [[]]
-landaSet.append(liabilities)
-landaSet.append(assets)
-landaNeigh.fit(assets, liabilities)
-# running knn on assets and revenues
-landrNeigh = KNeighborsClassifier(n_neighbors=5)
-landrNeigh.fit(assets, revenues)
-landrNeigh.reshape(-1, 1)
-# comparing one np to the median in liabilities
-# fig = px.scatter(x=landaNeigh[0], y=landaNeigh[1])
-# fig.show()
-''' 
