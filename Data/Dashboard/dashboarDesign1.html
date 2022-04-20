@@ -1,41 +1,69 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Load plotly.js into the DOM -->
     <title>The Non-Profit Datahub</title>
+    
+    <!-- Load plotly.js into the DOM -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
+
+    <!-- Load plotly.js into the DOM -->
+    <script src='https://cdn.plot.ly/plotly-2.11.1.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+
+    <!-- Load plotly.js into the DOM -->
     <script type="text/javascript">
       function updateSelection(){
         
       }
     </script>
+
+    <!-- Load plotly.js into the DOM -->
   	<style type="text/css">
   		body {
-  			background-color: white;
+        margin: 0px;
+        padding: 0px;
+  			background-color: #152238;
   		}
   		
   		#logo {
-  			border-radius: 20px;
-  			padding:20px 25px 10px 10px;
-  			margin: 20px;
+        height: 50px;
   		}
       #topSection {
         width: 100%;
+        background-color: white;
       }
 
       #rightColumn {
-        width: 25%;
+        width: 23%;
         float: right;
         display: inline-block;
+        margin: 2%;
+
       }
 
       #focalPoint {
         display: inline-block;
-        width: 75%;
+        background-color: white;
+        width: 69%;
         float: left;
+        border-radius: 15px;
+        margin: 2%;
       }
 
-      #footer {
-        width: 100%;
+      #footy {
+        width: 92%;
         float: right;
+        border-radius: 15px;
+        background-color: white;
+        font-family: 'Comfortaa', cursive;
+        margin-left: 5%; 
+        margin-right: 2%;
+        margin-bottom: 3%;
+        padding: 25px;
       }
 
       .selection {
@@ -43,64 +71,95 @@
       }
 
       .side {
-        margin-bottom: 3%;
-        border-color: grey;
-        padding: 20px;
+        margin-bottom: 10%;
+        border-radius: 15px;
+        background-color: white;
+        padding: 25px;
+        font-family: 'Comfortaa', cursive;
+
       }
 
+      .textTitle {
+        font-size: 40px;
+        color:  #152238;
+        font-family: 'Comfortaa', cursive;
+        margin-right: 35%
+      }
 
+      .button {
+          border-radius: 15px;
+          margin-right: 5%;
+          border: 2px solid #152238;
+          padding: 8px;
+          display: inline-block;
+          margin-top: 3%;
+          font-family: 'Comfortaa', cursive;
+          color:  #152238;
+          font-size: 20px;
+          float: right;
+
+
+      }
   	</style> 
 
   </head>
+
   <body>
-    <div id="logo"></div>
+
+    <!-- Load plotly.js into the DOM -->
     <div id="topSection">
+      <img src="NP_data.png" id="logo" class="selection">
+      <text class="textTitle">NP DataHub</text>
       <div id="dropDownFilterNTEEPrimary" class="selection">
         <form>
-          <select name="primary">
-            <option value="1"> Option 1 </option>
+          <select name="NTEE" class="button">
+            <option value="1"> NTEE </option>
             <option value="2"> 2 </option>
             <option value="3"> 3 </option>
           </select>
         </form>
       </div>
-      <div id="dropDownFilterNTEESecondary" class="selection">
+      <div id="Graph" class="selection">
         <form>
-          <select name="primary">
-            <option value="1"> Option 1 </option>
+          <select name="primary" class="button">
+            <option value="1"> Graph </option>
             <option value="2"> 2 </option>
             <option value="3"> 3 </option>
           </select>
         </form>
       </div>
-      <div id="dropDownFilterVariableForXAxis" class="selection">
+      <div id="X" class="selection">
         <form>
-          <select name="primary">
-            <option value="1"> Option 1 </option>
+          <select name="primary" class="button">
+            <option value="1"> X-Axis </option>
             <option value="2"> 2 </option>
             <option value="3"> 3 </option>
           </select>
         </form>
       </div>
-      <div id="dropDownFilterVariableForYAxis" class="selection">
+      <div id="Y" class="selection">
         <form >
-          <select name="primary">
-            <option value="1"> Option 1 </option>
+          <select name="primary" class="button">
+            <option value="1"> Y-Axis </option>
             <option value="2"> 2 </option>
             <option value="3"> 3 </option>
           </select>
         </form>
       </div>
     </div>
+
+    <!-- Load plotly.js into the DOM -->
     <div>
       <img src="../plot.png" alt="Graph" id ="focalPoint">
     </div>
+
+    <!-- Load plotly.js into the DOM -->
     <div id="rightColumn">
       <div class = "side" id = "dvOne">One</div>
       <div class = "side" id = "dvTwoSankey">Sankey</div>
       <div class = "side" id = "dvThree">Top Five</div>
     </div>
-    <div id= "footer">
+    <div id= "footy">
       <text> words words words awesome words </text>
     </div>
   </body>
