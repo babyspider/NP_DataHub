@@ -1,2 +1,6 @@
 # Installing NP_DataHub
-Flask is one of the dependencies we use for this project. You can install it at: https://flask.palletsprojects.com/en/2.1.x/installation/ You should also add a gitignore like the one demonstrated here: https://flask.palletsprojects.com/en/2.1.x/tutorial/layout/
+Different parts of this repository have different requirements to run.  
+  
+If you would just like to play with the visual dashboard, all you need to do is pull the repo and it will have all the dependencies needed. 
+  
+If you want to work on the data analysis side, we are using matplotlib, numpy and sklearn which can all be installed through either apt-get or pip.
