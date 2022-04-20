@@ -5,7 +5,7 @@ from sklearn.cluster import KMeans
 import numpy as np
 from mpl_toolkits.mplot3d import Axes3D
 from sklearn.neighbors import KNeighborsClassifier
-import matplotlib.pyplot as plt, mlpd3
+import matplotlib.pyplot as plt, mpld3
 import matplotlib
 
 #so you dont need a gui 
@@ -60,7 +60,7 @@ medLiabilities = statistics.median(liabilities)
 
 
 #defining and running the kmeans
-clusters = 8
+clusters = 4
 graph = plt.figure()
 ax = graph.add_subplot(projection='3d')
 km = KMeans(n_clusters = clusters, n_init = 10, init = "random")
@@ -75,7 +75,9 @@ for c in range(0, clusters):
 		if label[l] == c:
 			clustery.append(test[l])
 	clusterPlot = convertToGraph(clustery)
+	print(clusterPlot)
 	ax.scatter(clusterPlot[0], clusterPlot[1], clusterPlot[2], color = colors[c])
+	print("\n\n New CLuster \n\n")
 
 # save graph as image
 plt.savefig("plot.png")

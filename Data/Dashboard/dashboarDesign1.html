@@ -15,92 +15,11 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
 
     <!-- Change Data Displayed -->
-    <script type="text/javascript">
-      function updateSelection(){
-        
-      }
-    </script>
+    <script src='cluster3D.js'></script>
+
 
     <!-- CSS for the Document -->
-  	<style type="text/css">
-  		body {
-        margin: 0px;
-        padding: 0px;
-  			background-color: #152238;
-  		}
-  		
-  		#logo {
-        height: 50px;
-  		}
-      #topSection {
-        width: 100%;
-        background-color: white;
-      }
-
-      #rightColumn {
-        width: 23%;
-        float: right;
-        display: inline-block;
-        margin: 2%;
-
-      }
-
-      #focalPoint {
-        display: inline-block;
-        background-color: white;
-        width: 69%;
-        float: left;
-        border-radius: 15px;
-        margin: 2%;
-      }
-
-      #footy {
-        width: 92%;
-        float: right;
-        border-radius: 15px;
-        background-color: white;
-        font-family: 'Comfortaa', cursive;
-        margin-left: 5%; 
-        margin-right: 2%;
-        margin-bottom: 3%;
-        padding: 25px;
-      }
-
-      .selection {
-        display: inline-block;
-      }
-
-      .side {
-        margin-bottom: 10%;
-        border-radius: 15px;
-        background-color: white;
-        padding: 25px;
-        font-family: 'Comfortaa', cursive;
-
-      }
-
-      .textTitle {
-        font-size: 40px;
-        color:  #152238;
-        font-family: 'Comfortaa', cursive;
-        margin-right: 35%
-      }
-
-      .button {
-          border-radius: 15px;
-          margin-right: 5%;
-          border: 2px solid #152238;
-          padding: 8px;
-          display: inline-block;
-          margin-top: 3%;
-          font-family: 'Comfortaa', cursive;
-          color:  #152238;
-          font-size: 20px;
-          float: right;
-
-
-      }
-  	</style> 
+    <link rel="stylesheet" href="style.css">
 
   </head>
 
@@ -149,8 +68,7 @@
     </div>
 
     <!-- Graph -->
-    <div>
-      <img src="../plot.png" alt="Graph" id ="focalPoint">
+    <div id = "focalPoint">
     </div>
 
     <!-- Stat boxes -->

@@ -1,0 +1,77 @@
+body {
+margin: 0px;
+padding: 0px;
+background-color: #152238;
+}
+
+#logo {
+height: 50px;
+}
+
+#topSection {
+width: 100%;
+background-color: white;
+}
+
+#rightColumn {
+width: 23%;
+float: right;
+display: inline-block;
+margin: 2%;
+
+}
+
+#focalPoint {
+display: inline-block;
+background-color: white;
+width: 65%;
+float: left;
+padding: 2%;
+border-radius: 15px;
+margin: 2%;
+}
+
+#footy {
+width: 92%;
+float: right;
+border-radius: 15px;
+background-color: white;
+font-family: 'Comfortaa', cursive;
+margin-left: 5%; 
+margin-right: 2%;
+margin-bottom: 3%;
+padding: 25px;
+}
+
+.selection {
+display: inline-block;
+}
+
+.side {
+margin-bottom: 10%;
+border-radius: 15px;
+background-color: white;
+padding: 25px;
+font-family: 'Comfortaa', cursive;
+
+}
+
+.textTitle {
+font-size: 40px;
+color:  #152238;
+font-family: 'Comfortaa', cursive;
+margin-right: 35%
+}
+
+.button {
+border-radius: 15px;
+margin-right: 5%;
+border: 2px solid #152238;
+padding: 8px;
+display: inline-block;
+margin-top: 3%;
+font-family: 'Comfortaa', cursive;
+color:  #152238;
+font-size: 20px;
+float: right;
+}
