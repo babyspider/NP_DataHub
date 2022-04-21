@@ -10,4 +10,7 @@
 
 ### HTML
  - use indentation for hierarchy
- - all css should be in a style tag at the top of the document or in its own document
+ - all css should be in its own document
+ - all javascript should be written in a seperate doc and imported in 
+ - all chunks of code should include an inline comment
+ - all imports in the head should include a comment of what it is / is from
