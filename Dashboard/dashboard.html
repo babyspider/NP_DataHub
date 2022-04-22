@@ -3,7 +3,7 @@
   <head>
     <!-- Load plotly.js into the DOM -->
     <title>The Non-Profit Datahub</title>
-    
+
     <!-- Load google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +15,11 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
 
     <!-- Change Data Displayed -->
-    
     <script src='cluster3D.js'></script>
-    
-    <!-- <script src='ensemble.js'></script> -->
+    <script src='ensemble.js'></script>
+    <script src='boxAndWisker.js'></script>
 
+    <scrip> </scrip>
 
     <!-- CSS for the Document -->
     <link rel="stylesheet" href="style.css">
@@ -72,6 +72,17 @@
     <!-- Graph -->
     <div id = "focalPoint">
     </div>
+    <select id="plotselect" onchange="findplot()" >
+        <option value="ein01">ein01</option>
+        <option value="ein02">ein02</option>
+        <option value="ein03">ein03</option>
+        <option value="ein04">ein04</option>
+        <option value="ein05">ein05</option>
+        <option value="ein06">ein06</option>
+        <option value="ein11">ein11</option>
+        <option value="ein13">ein13</option>
+        <option value="All">All</option>
+    </select>
 
     <!-- Stat boxes -->
     <div id="rightColumn">

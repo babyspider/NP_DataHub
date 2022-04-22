@@ -31,13 +31,34 @@ border-radius: 15px;
 margin: 2%;
 }
 
+#myDiv {
+display: inline-block;
+background-color: white;
+width: 65%;
+float: left;
+padding: 2%;
+border-radius: 15px;
+margin: 2%;
+}
+
+#ensemble {
+display: inline-block;
+background-color: white;
+width: 65%;
+float: left;
+padding: 2%;
+border-radius: 15px;
+margin: 2%;
+}
+
+
 #footy {
 width: 92%;
 float: right;
 border-radius: 15px;
 background-color: white;
 font-family: 'Comfortaa', cursive;
-margin-left: 5%; 
+margin-left: 5%;
 margin-right: 2%;
 margin-bottom: 3%;
 padding: 25px;
