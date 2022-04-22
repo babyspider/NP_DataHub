@@ -100,8 +100,7 @@ var layout = {
 };
 
 data = [ein01];
-Plotly.newPlot('myDiv', data, layout)
-
+Plotly.newPlot('BWAssets', data, layout)
 
 function findplot(){
     let eID = document.getElementById("plotselect");
@@ -144,10 +143,10 @@ function findplot(){
             }
     else{
         data=[ein01, ein02, ein03, ein04, ein05, ein06, ein11, ein13,];
-            X=5;
+            X=14;
             };
 
     console.log(X)
 
-    Plotly.react('myDiv', data, layout);
+    Plotly.react('BWAssets', data, layout);
     };

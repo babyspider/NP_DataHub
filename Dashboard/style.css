@@ -31,7 +31,17 @@ border-radius: 15px;
 margin: 2%;
 }
 
-#myDiv {
+#BWAssets {
+display: inline-block;
+background-color: white;
+width: 65%;
+float: left;
+padding: 2%;
+border-radius: 15px;
+margin: 2%;
+}
+
+#BWRevenes {
 display: inline-block;
 background-color: white;
 width: 65%;

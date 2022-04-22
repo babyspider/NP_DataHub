@@ -49,7 +49,7 @@ ein = pullToListStr(values, 2)
 
 ein = [e.split('-')[0] for e in ein]
 
-d = getDict(ein,assets)
+d = getDict(ein,revenues)
 
 for key,val in d.items():
     print(f'{key}: {val}')

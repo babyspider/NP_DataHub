@@ -17,9 +17,23 @@
     <!-- Change Data Displayed -->
     <script src='cluster3D.js'></script>
     <script src='ensemble.js'></script>
-    <script src='boxAndWisker.js'></script>
+    <script src='boxAndWiskerAssets.js'></script>
+    <script src='boxAndWiskerRevenues.js'></script>
 
-    <scrip> </scrip>
+    <script>
+      function changegraph(){
+        let eID = document.getElementById("Graph");
+        let graphVal = eID.options[eID.selectedIndex].value;
+
+        if (graphVal === boxAndWisker){
+          document.getElementById('focalPoint').id = 'BWAssets'
+          document.getElementById('BWAssets').id = 'BWAssets'
+        }else{
+          document.getElementById('focalPoint').id = 'focalPoint'
+          document.getElementById('BWAssets').id = 'focalPoint'
+        }
+      }
+    </script>
 
     <!-- CSS for the Document -->
     <link rel="stylesheet" href="style.css">
@@ -42,10 +56,11 @@
       </div>
       <div id="Graph" class="selection">
         <form>
-          <select name="Graph" class="button">
-            <option value="" disabled selected hidden> Graph </option>
-            <option value="1"> RF </option>
-            <option value="2"> Cluster </option>
+          <select name="Graph" class="button",onchange="changegraph()">
+            <option value="Cluster" disabled selected hidden> Graph </option>
+            <option value="boxAndWiskerAssets"> boxAndWiskerAssets </option>
+            <option value="boxAndWiskerRevenues"> boxAndWiskerAssets </option>
+            <option value="Cluster"> Cluster </option>
           </select>
         </form>
       </div>
