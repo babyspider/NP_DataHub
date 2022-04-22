@@ -102,7 +102,7 @@ var layout = {
 data = [ein01];
 Plotly.newPlot('BWAssets', data, layout)
 
-function findplot(){
+function findplotA(){
     let eID = document.getElementById("plotselect");
     let plotVal = eID.options[eID.selectedIndex].value;
 

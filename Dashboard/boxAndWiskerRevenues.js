@@ -94,7 +94,7 @@ var layout = {
   },
   yaxis:{
     title: {
-        text:'Assets'
+        text:'Revenues'
     }
   },
 };
@@ -102,7 +102,7 @@ var layout = {
 data = [ein01];
 Plotly.newPlot('BWRevenes', data, layout)
 
-function findplot(){
+function findplotR(){
     let eID = document.getElementById("plotselect");
     let plotVal = eID.options[eID.selectedIndex].value;
 

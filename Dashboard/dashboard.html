@@ -21,17 +21,21 @@
     <script src='boxAndWiskerRevenues.js'></script>
 
     <script>
-      function changegraph(){
-        let eID = document.getElementById("Graph");
-        let graphVal = eID.options[eID.selectedIndex].value;
-
-        if (graphVal === boxAndWisker){
-          document.getElementById('focalPoint').id = 'BWAssets'
-          document.getElementById('BWAssets').id = 'BWAssets'
-        }else{
-          document.getElementById('focalPoint').id = 'focalPoint'
-          document.getElementById('BWAssets').id = 'focalPoint'
-        }
+      // function changegraph(){
+      //   let eID = document.getElementById("Graph");
+      //   let graphVal = eID.options[eID.selectedIndex].value;
+      //
+      //   if (graphVal === boxAndWisker){
+      //     document.getElementById('focalPoint').id = 'BWAssets'
+      //     //document.getElementById('BWAssets').id = 'BWAssets'
+      //   }else{
+      //     //document.getElementById('focalPoint').id = 'focalPoint'
+      //     document.getElementById('BWAssets').id = 'focalPoint'
+      //   }
+      // }
+      function changegraph(val){
+        var e = document.getElementByClassName("Graph");
+        e.id = val;
       }
     </script>
 
@@ -56,7 +60,7 @@
       </div>
       <div id="Graph" class="selection">
         <form>
-          <select name="Graph" class="button",onchange="changegraph()">
+          <select name="Graph" class="button",onchange="changegraph(this.value)">
             <option value="Cluster" disabled selected hidden> Graph </option>
             <option value="BWAssets"> BWAssets </option>
             <option value="BWRevenues"> BWRevenues </option>
@@ -85,9 +89,13 @@
     </div>
 
     <!-- Graph -->
+    <!-- <div id = "BWAssets">
+    </div> -->
+    <!-- <div id = "BWRevenes">
+    </div> -->
     <div id = "focalPoint">
     </div>
-    <select id="plotselect" onchange="findplot()" >
+    <select id="plotselect" onchange="findplotR()" >
         <option value="ein01">ein01</option>
         <option value="ein02">ein02</option>
         <option value="ein03">ein03</option>
