@@ -85,7 +85,7 @@ ein11 = {
 
 var layout = {
   title: {
-    text:'Assests by EIN Code Box Plot'
+    text:'Revenues by EIN Code Box Plot'
   },
   xaxis:{
     title: {
