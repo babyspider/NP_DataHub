@@ -29,10 +29,10 @@ print(y)
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state = 3)
 
-print(X_train)
-print(X_test)
-print(y_train)
-print(y_test)
+#print(X_train)
+#print(X_test)
+#print(y_train)
+#print(y_test)
 
 
 #multipl estimators
@@ -114,12 +114,10 @@ for i in range(0, 10):
 
 plt.show()
 
-for i in range(0, len(full)):
-	fig = go.Figure(go.Scatter(x = times, y = full.iloc[i,:]))
-fig.show()
-
 #prediction
 Z = df.iloc[:, 1:5].dropna()
+prediction = reg.predict(Z)
+print(prediction)
 
 
 
