@@ -13,10 +13,8 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.ensemble import StackingRegressor
 import plotly.graph_objects as go
 
-
 df = pd.read_csv("revenues.csv")
 
- 
 X = df.iloc[:, 0:4].dropna()
 #df["NetGainLoss1"] = df["NetGainLoss1"] /df["NetGainLoss1"].abs().max()
 y = df.loc[:, "RevTotal5"].dropna()
@@ -120,10 +118,6 @@ fig.show()
 
 #prediction
 Z = df.iloc[:, 1:5].dropna()
-
-
-
-
 
 #check best n_estimators value
 print(rf_gs.best_params_)
